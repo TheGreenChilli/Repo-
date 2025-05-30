@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="header-section" id="home">
+        <nav>
+          <a href="#home">
+            <h2 class="logo">TheGreen<span>Chilli</span></h2>
+          </a>
+          <!-- Hamburger Icon -->
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="nav-links" id="navLinks">
+            <ul>
+              <li><a href="#home" onclick="closeMenu()">Home</a></li>
+              <li><a href="#about" onclick="closeMenu()">About</a></li>
+              <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+              <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+              <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="hero-section">
+          <h4>Hello, my name is</h4>
+          <h1>Sanjana <span>Kumari</span></h1>
+          <h3>I am a Web Developer and an Artist. I❤️Art & Craft.</h3>
+          <a
+            href="./Images/SANJANA KUMARI.pdf"
+            download="sanjana.pdf"
+            class="contact-btn download-btn"
+          >
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <h2 class="about-title">
+          Passionate Frontend Developer Crafting Engaging Web Interfaces.
+        </h2>
+        <p>
+          I build responsive, user-friendly web interfaces with clean code and
+          creative design. I enjoy solving problems and bringing ideas to life
+          through intuitive digital experiences.
+        </p>
+
+        <a
+          href="mailto:sanju.kri2112@gmail.com"
+          class="contact-btn contact-btn-icon"
+        >
+          <i class="fas fa-envelope"></i> Contact Me</a
+        >
+      </div>
+
+      <div class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-html5 skill-icon"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt skill-icon"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill-card">
+            <img
+              src="Images/tailwindcss.svg"
+              alt="Tailwind CSS"
+              class="skill-icon svg-icon"
+            />
+            <p>Tailwind</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js skill-icon"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react skill-icon"></i>
+            <p>ReactJs</p>
+          </div>
+          <div class="skill-card">
+            <img
+              src="Images/redux.svg"
+              alt="Tailwind CSS"
+              class="skill-icon svg-icon"
+            />
+            <p>Redux</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-figma skill-icon"></i>
+            <p>Figma</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-github skill-icon"></i>
+            <p>Git & GitHub</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-python skill-icon"></i>
+            <p>Python</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database skill-icon"></i>
+            <p>MySQL</p>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-leaf skill-icon"></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="skill-card skill-uiux">
+            <i class="fas fa-pencil-ruler skill-icon"></i>
+            <p>UI/UX</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="projects" id="projects">
+        <h2 class="section-title">Latest Projects</h2>
+
+        <div class="project-item">
+          <img
+            src="Images/project1.png"
+            alt="Project 1"
+            class="project-image"
+          />
+          <div class="project-content">
+            <span class="project-tag">Food Delivery App</span>
+            <h3>Foodease – Seamless Food Ordering Experience</h3>
+            <p>
+              Foodease is a modern web application built using ReactJS, Redux
+              Toolkit, Tailwind CSS, and the Swiggy API. It offers a smooth user
+              experience for browsing restaurants, viewing menus, managing a
+              cart, and placing orders.
+            </p>
+            <a href="https://foodeasee.netlify.app/" class="project-btn"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-item reverse">
+          <img
+            src="Images/project1.png"
+            alt="Project 2"
+            class="project-image"
+          />
+          <div class="project-content">
+            <span class="project-tag">Streaming Web App</span>
+            <h3>
+              Streamlyze – Smart Netflix-Style Platform with ChatGPT Integration
+            </h3>
+            <p>
+              Streamlyze is a Netflix-style video streaming clone built using
+              ReactJS, Redux Toolkit, Tailwind CSS, and the OpenAI ChatGPT API.
+              It features smart movie recommendations, a sleek responsive UI,
+              and seamless content browsing powered by AI.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <img
+            src="Images/project1.png"
+            alt="Project 3"
+            class="project-image"
+          />
+          <div class="project-content">
+            <span class="project-tag">Video Streaming App</span>
+            <h3>
+              Vibecast – YouTube-Style Platform with Live Comments & TMDB
+              Integration
+            </h3>
+            <p>
+              Vibecast is a YouTube-inspired video streaming platform built
+              using ReactJS, Redux Toolkit, Tailwind CSS, and powered by the
+              YouTube Data API and TMDB. It features real-time video search,
+              trending video feeds, movie data integration, and **live
+              commenting during active video streams**, enabling users to chat
+              and connect just like on YouTube Live.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-item reverse">
+          <img
+            src="Images/project4.png"
+            alt="Project 4"
+            class="project-image"
+          />
+          <div class="project-content">
+            <span class="project-tag"> Personal Portfolio</span>
+            <h3>TheGreenChilli</h3>
+            <p>
+              TheGreenChilli is a beautifully designed, fully responsive
+              personal portfolio website built using HTML, CSS, and JavaScript.
+              It features clean UI/UX principles, mobile-first design, and
+              smooth user interactions to professionally showcase about, skills,
+              projects and contact details.
+            </p>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact-wrapper" id="contact">
+        <!-- Get in Touch Box -->
+        <div class="contact-form-box">
+          <h2>Get in touch</h2>
+          <p>Feel free to reach out for collaborations or just a quick chat.</p>
+          <form>
+            <div class="form-row">
+              <input type="text" placeholder="Name *" required />
+              <input type="email" placeholder="Email *" required />
+            </div>
+            <input type="text" placeholder="Subject *" required />
+            <textarea placeholder="Your message *" required></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info (no box) -->
+        <div class="contact-info-text">
+          <div class="info-item">
+            <span class="icon phone"></span>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 6200495857</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon mail"></span>
+            <div>
+              <h4>Mail</h4>
+              <p>sanju.kri2112@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon location"></span>
+            <div>
+              <h4>Address</h4>
+              <p>Ramgarh, Jharkhand</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>© <span id="year"></span> TheGreenChilli • All rights reserved.</p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/sanjana-kumari-789463219/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/TheGreenChilli"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/sanju_art_gallery12/?igsh=N2cwcDJzNmdwcWxo#"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
